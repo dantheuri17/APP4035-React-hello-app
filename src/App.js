@@ -2,16 +2,16 @@
 import './App.css';
 // import Greeter from './Greeter'
 // import Clock from './Clock'
-import Clock2 from './Clock2'
+import Clock3 from './Clock3'
 
 function App() {
   return (
 		<div>
-			<Clock2 continent="Africa" city="Nairobi" /> <hr />
-			<Clock2 continent="Europe" city="London" /> <hr />
-			<Clock2 continent="Australia" city="Sydney" /> <hr />
-			<Clock2 continent="America" city="New York" /> <hr />
-			<Clock2 continent="Asia" city="Tokyo" /> <hr />
+			<Clock3 continent="Africa" city="Nairobi" clockType='Interactive' /> <hr />
+			<Clock3 continent="Europe" city="London" clockType='Interactive' /> <hr />
+			<Clock3 continent="Australia" city="Sydney" clockType="Interactive" /> <hr />
+			<Clock3 continent="America" city="New York" clockType="Interactive" /> <hr />
+			<Clock3 continent="Asia" city="Tokyo" clockType="Interactive" /> <hr />
 		</div>
 	);
   }

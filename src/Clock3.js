@@ -1,15 +1,21 @@
 import { useState, useEffect } from "react";
 
-function Clock2(props) {
+function Clock3(props) {
 	const [currentDate, setCurrentDate] = useState(new Date());
 
 	console.log(useState(new Date()));
 
+	if (props.clockType === "Interactive") {
+	}
 	useEffect(() => {
-		const timerID = setInterval(() => setCurrentDate(new Date()), 1000);
-
-		return () => clearInterval(timerID);
-	}, []);
+        if(props.clockType === 'Interactive') {
+            const timerID = setInterval(() => setCurrentDate(new Date()), 1000);
+						return () => clearInterval(timerID);
+        }
+    
+        else if (props.clockType === 'Static') return
+		
+	}, [props.clockType]);
 
 	const continent = props.continent;
 	const city = props.city;
@@ -25,4 +31,4 @@ function Clock2(props) {
 	);
 }
 
-export default Clock2;
+export default Clock3;
