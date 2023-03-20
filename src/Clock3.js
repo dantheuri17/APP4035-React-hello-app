@@ -5,8 +5,6 @@ function Clock3(props) {
 
 	console.log(useState(new Date()));
 
-	if (props.clockType === "Interactive") {
-	}
 	useEffect(() => {
         if(props.clockType === 'Interactive') {
             const timerID = setInterval(() => setCurrentDate(new Date()), 1000);
